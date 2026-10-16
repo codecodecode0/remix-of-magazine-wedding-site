@@ -107,12 +107,9 @@ const OurStory = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="max-w-2xl mx-auto text-center mb-16 md:mb-24"
         >
-          <p className="font-serif text-xl md:text-2xl italic text-muted-foreground leading-relaxed">
-            "Whatever our souls are made of, his and mine are the same."
+          <p lang="mr" className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+            “दोन मनांची गाठ, आयुष्यभराची साथ.”
           </p>
-          <cite className="block mt-4 text-sm tracking-wider uppercase text-muted-foreground/70 not-italic">
-            — Emily Brontë
-          </cite>
         </motion.blockquote>
 
         {/* Timeline with Photos */}

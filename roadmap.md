@@ -2,3 +2,5 @@
 - [x] Update names, dates, venue, timeline, and two-day schedule.
 - [x] Verify wedding details and the visible page.
 - [ ] Replace template pictures with personal photos — waiting for the couple to upload photos.
+- [x] Add descriptive event copy, suggested dress codes, Marathi lines, and six event-themed pictures.
+- [x] Verify all six event pictures and descriptions on desktop and phone layouts.
