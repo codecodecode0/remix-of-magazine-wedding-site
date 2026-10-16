@@ -97,20 +97,9 @@ const OurStory = () => {
           <h2 className="heading-elegant font-serif text-4xl md:text-5xl lg:text-6xl">
             Our Story
           </h2>
-          <div className="divider-editorial mt-8" />
+          <p lang="mr" className="text-lg md:text-xl text-rose-foreground mt-3">दोन मनांची गाठ, आयुष्यभराची साथ.</p>
+          <div className="divider-editorial mt-7" />
         </motion.div>
-
-        {/* Quote */}
-        <motion.blockquote
-          initial={{ opacity: 0 }}
-          animate={isHeaderInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="max-w-2xl mx-auto text-center mb-16 md:mb-24"
-        >
-          <p lang="mr" className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-            “दोन मनांची गाठ, आयुष्यभराची साथ.”
-          </p>
-        </motion.blockquote>
 
         {/* Timeline with Photos */}
         <div className="max-w-5xl mx-auto space-y-16 md:space-y-24">

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Wedding Devanagari';
+  src: url('./assets/fonts/noto-serif-devanagari.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 /* Modern Editorial Romance - Wedding Design System
    Inspired by high-end fashion magazines and contemporary art direction
    All colors MUST be HSL.
@@ -58,6 +66,9 @@
     /* Typography */
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
+    --font-marathi: 'Wedding Devanagari', Georgia, serif;
+    --photograph-overlay: 30 10% 8%;
+    --on-photograph: 40 33% 96%;
 
     --sidebar-background: 40 30% 97%;
     --sidebar-foreground: 30 10% 20%;
@@ -132,6 +143,14 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
   }
+
+  [lang="mr"] {
+    font-family: var(--font-marathi);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-wrap: pretty;
+  }
 }
 
 @layer components {
@@ -144,7 +163,8 @@
 
   .heading-elegant {
     font-family: var(--font-serif);
-    @apply tracking-wide leading-relaxed font-normal;
+    @apply leading-relaxed font-normal;
+    letter-spacing: 0;
   }
 
   /* Subtle link underline animation */

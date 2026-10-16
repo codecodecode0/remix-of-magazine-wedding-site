@@ -1,9 +1,9 @@
 import engagementImage from "@/assets/event-engagement.jpg";
 import haldiImage from "@/assets/event-haldi.jpg";
-import sangeetImage from "@/assets/event-sangeet.jpg";
+import sangeetImage from "@/assets/sangeet-artistic.jpg";
 import saptapadiImage from "@/assets/event-saptapadi.jpg";
-import baaratImage from "@/assets/event-baarat.jpg";
-import receptionImage from "@/assets/event-reception.jpg";
+import baaratImage from "@/assets/baarat-procession.jpg";
+import receptionImage from "@/assets/reception-artistic.jpg";
 
 export const wedding = {
   names: "Vedangi & Siddhant",
@@ -23,14 +23,14 @@ export const celebrationDays = [
         title: "Engagement", marathiTitle: "साखरपुडा", time: "10:00 AM",
         quote: "साखरेच्या गोडव्याने, जुळले दोन मनांचे धागे.",
         description: "Our celebrations begin with the sweetness of a sakharpuda. Join our families as we exchange rings and mark the beginning of a lifetime together, surrounded by your love and blessings.",
-        dressCode: "Pastel ethnic elegance", attire: "Pastel sarees, salwar suits or kurtas; soft pink, mint and ivory tones.",
+        dressCode: "Ethnic elegance", attire: "Sarees, salwar suits or kurtas with thoughtful accessories for a graceful morning celebration.",
         image: engagementImage, imageAlt: "Gold engagement rings surrounded by jasmine and pink flowers",
       },
       {
         title: "Haldi Carnival", marathiTitle: "हळदीचा सोहळा", time: "3:00 PM",
         quote: "हळदीचा रंग, आनंदाची उधळण; हसत खेळत साजरा करू हा क्षण!",
         description: "A joyful afternoon of haldi, laughter and togetherness. Bring your playful spirit as our loved ones shower us with turmeric and good wishes, turning the day into a bright celebration of new beginnings.",
-        dressCode: "Sunshine yellow & easygoing", attire: "Yellow or floral outfits, light fabrics and comfortable flats; choose something you don’t mind getting a little haldi on.",
+        dressCode: "Pastel colours", attire: "Soft pastel sarees, kurtas or playful floral outfits in light fabrics, with comfortable flats; choose something you don’t mind getting a little haldi on.",
         image: haldiImage, imageAlt: "Brass bowl of turmeric paste with marigolds and yellow silk",
       },
       {
@@ -38,7 +38,7 @@ export const celebrationDays = [
         quote: "सुरांची मैफल, नात्यांचा मेळ; आज रंगू दे आनंदाचा खेळ!",
         description: "An evening that brings both families together through music and dance. Celebrate with us as favourite songs, shared laughter and joyful performances fill the night with memories to treasure.",
         dressCode: "Jewel tones & festive sparkle", attire: "Lehengas, festive sarees, bandhgalas or embellished kurtas; wear shoes made for dancing.",
-        image: sangeetImage, imageAlt: "Tabla and string instrument on a flower-decorated evening stage",
+        image: sangeetImage, imageAlt: "Watercolour sangeet illustration with flowing silk ribbons, flower petals and an empty dance floor beneath festive lights",
       },
     ],
   },
@@ -58,14 +58,14 @@ export const celebrationDays = [
         quote: "ढोलाच्या तालावर, आनंदाच्या गजरात; नाचत गात निघाली वरात!",
         description: "Let the celebration spill into the evening with the spirit of a lively varaat. Join the procession, cheer with our families and dance your heart out as we welcome this next chapter with joy.",
         dressCode: "Colourful festive wear", attire: "Bright sarees, festive kurtas or Indo-western outfits; comfortable footwear for the procession, with an optional colourful pheta.",
-        image: baaratImage, imageAlt: "Traditional dhol drums and saffron and ivory Maharashtrian pheta turbans",
+        image: baaratImage, imageAlt: "Dhol players and guests in colourful pheta turbans dancing in a Maharashtrian baarat procession",
       },
       {
         title: "Reception", marathiTitle: "स्वागत समारंभ", time: "7:00 PM",
         quote: "आपल्या आशीर्वादांची साथ, खुलो आमच्या संसाराची वाट.",
         description: "Our two days of celebration come together in a warm evening with the people we love. Join us to share your blessings, capture happy memories and celebrate the beginning of our forever.",
         dressCode: "Elegant evening formal", attire: "Silk sarees, elegant lehengas, suits or bandhgalas; rich colours and refined details for the evening.",
-        image: receptionImage, imageAlt: "Elegant reception tablescape with flowers, crystal glasses and candlelight",
+        image: receptionImage, imageAlt: "Painterly garden reception with candlelit place settings, empty chairs and an illuminated floral stage",
       },
     ],
   },

@@ -22,6 +22,8 @@ export default {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
+        "photograph-overlay": "hsl(var(--photograph-overlay))",
+        "on-photograph": "hsl(var(--on-photograph))",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
