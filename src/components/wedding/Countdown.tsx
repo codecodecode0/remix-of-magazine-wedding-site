@@ -31,7 +31,7 @@ const Countdown = () => {
           alt="Romantic scenery"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-photograph-overlay/70" />
       </div>
 
       <div className="relative z-10 container mx-auto px-6 text-center">
@@ -41,11 +41,8 @@ const Countdown = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-sm tracking-[0.3em] uppercase text-white/70 mb-4">
-            Counting Down To
-          </p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-4">
-            Saptapadi
+          <h2 className="font-serif text-3xl md:text-5xl text-on-photograph mb-4">
+            Counting down to wedding
           </h2>
           <motion.div
             animate={{ scale: [1, 1.2, 1] }}
@@ -61,7 +58,7 @@ const Countdown = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex justify-center items-center gap-4 md:gap-8 flex-wrap"
+          className="grid grid-cols-4 max-w-2xl mx-auto gap-2 md:gap-6"
         >
           {timeBlocks.map((block, index) => (
             <motion.div
@@ -69,10 +66,10 @@ const Countdown = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-6 md:px-10 md:py-8 min-w-[80px] md:min-w-[120px]"
+              className="border-t border-on-photograph/30 py-5 md:py-8 min-w-0"
             >
               <motion.span 
-                className="block font-serif text-4xl md:text-6xl text-white mb-2"
+                className="block font-serif text-3xl md:text-6xl text-on-photograph mb-2 tabular-nums"
                 key={block.value}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -80,7 +77,7 @@ const Countdown = () => {
               >
                 {String(block.value).padStart(2, "0")}
               </motion.span>
-              <span className="text-xs md:text-sm tracking-[0.2em] uppercase text-white/60">
+              <span className="text-[10px] md:text-xs uppercase text-on-photograph/70">
                 {block.label}
               </span>
             </motion.div>
@@ -92,7 +89,7 @@ const Countdown = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="font-serif text-xl md:text-2xl italic text-white/80 mt-12"
+          className="font-serif text-lg md:text-2xl italic text-on-photograph/80 mt-10"
         >
           {wedding.dates} • {wedding.location}
         </motion.p>
