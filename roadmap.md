@@ -9,4 +9,4 @@
 - [x] Refine bilingual typography and schedule design; update the wedding countdown heading.
 - [x] Verify the updated schedule and countdown on desktop and phone layouts.
 - [x] Replace Sangeet and Reception with subtle, non-photorealistic illustrations without visible people, and verify them on the page.
-- [ ] Restore a cohesive original-style picture set; replace the rejected Sangeet illustration with subtle dance-themed details and verify.
+- [x] Restore a cohesive original-style picture set; replace the rejected Sangeet illustration with subtle dance-themed details and verify.
