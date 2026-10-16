@@ -1,9 +1,9 @@
 import engagementImage from "@/assets/event-engagement.jpg";
 import haldiImage from "@/assets/event-haldi.jpg";
-import sangeetImage from "@/assets/sangeet-dancing.jpg";
+import sangeetImage from "@/assets/sangeet-artistic.jpg";
 import saptapadiImage from "@/assets/event-saptapadi.jpg";
 import baaratImage from "@/assets/baarat-procession.jpg";
-import receptionImage from "@/assets/reception-celebration.jpg";
+import receptionImage from "@/assets/reception-artistic.jpg";
 
 export const wedding = {
   names: "Vedangi & Siddhant",
@@ -38,7 +38,7 @@ export const celebrationDays = [
         quote: "सुरांची मैफल, नात्यांचा मेळ; आज रंगू दे आनंदाचा खेळ!",
         description: "An evening that brings both families together through music and dance. Celebrate with us as favourite songs, shared laughter and joyful performances fill the night with memories to treasure.",
         dressCode: "Jewel tones & festive sparkle", attire: "Lehengas, festive sarees, bandhgalas or embellished kurtas; wear shoes made for dancing.",
-        image: sangeetImage, imageAlt: "Wedding guests dancing together at a festive open-air sangeet under fairy lights",
+        image: sangeetImage, imageAlt: "Watercolour sangeet illustration with flowing silk ribbons, flower petals and an empty dance floor beneath festive lights",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const celebrationDays = [
         quote: "आपल्या आशीर्वादांची साथ, खुलो आमच्या संसाराची वाट.",
         description: "Our two days of celebration come together in a warm evening with the people we love. Join us to share your blessings, capture happy memories and celebrate the beginning of our forever.",
         dressCode: "Elegant evening formal", attire: "Silk sarees, elegant lehengas, suits or bandhgalas; rich colours and refined details for the evening.",
-        image: receptionImage, imageAlt: "Guests celebrating together at an elegant garden reception beneath an illuminated floral stage",
+        image: receptionImage, imageAlt: "Painterly garden reception with candlelit place settings, empty chairs and an illuminated floral stage",
       },
     ],
   },

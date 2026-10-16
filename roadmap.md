@@ -8,3 +8,4 @@
 - [x] Replace Sangeet, Baarat, and Reception pictures with celebration scenes.
 - [x] Refine bilingual typography and schedule design; update the wedding countdown heading.
 - [x] Verify the updated schedule and countdown on desktop and phone layouts.
+- [ ] Replace Sangeet and Reception with subtle, non-photorealistic illustrations without visible people, and verify them on the page.
