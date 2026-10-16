@@ -4,3 +4,7 @@
 - [ ] Replace template pictures with personal photos — waiting for the couple to upload photos.
 - [x] Add descriptive event copy, suggested dress codes, Marathi lines, and six event-themed pictures.
 - [x] Verify all six event pictures and descriptions on desktop and phone layouts.
+- [ ] Remove engagement colour guidance and request pastels for Haldi Carnival.
+- [ ] Replace Sangeet, Baarat, and Reception pictures with celebration scenes.
+- [ ] Refine bilingual typography and schedule design; update the wedding countdown heading.
+- [ ] Verify the updated schedule and countdown on desktop and phone layouts.
