@@ -210,7 +210,7 @@ const RSVPForm = () => {
                         <RadioGroup
                           onValueChange={field.onChange}
                           defaultValue={field.value}
-                          className="flex gap-6 pt-2"
+                          className="flex flex-wrap gap-6 pt-2"
                         >
                           <div className="flex items-center space-x-3">
                             <RadioGroupItem
