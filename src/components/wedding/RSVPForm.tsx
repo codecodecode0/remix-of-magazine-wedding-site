@@ -92,7 +92,7 @@ const RSVPForm = () => {
   }
 
   return (
-    <section className="py-24 md:py-32 bg-card">
+    <section className="py-24 md:py-32 bg-card overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
@@ -110,7 +110,7 @@ const RSVPForm = () => {
           </h2>
           <div className="divider-editorial mt-8" />
           <p className="text-muted-foreground mt-8 max-w-md mx-auto">
-            Please respond by August 1st, 2026
+            January 28–29, 2027 · The Foresta Resort
           </p>
         </motion.div>
 
@@ -142,7 +142,7 @@ const RSVPForm = () => {
               <p className="font-serif text-lg italic text-muted-foreground">
                 "Can't wait to celebrate with you!"
               </p>
-              <p className="text-sm tracking-wider uppercase mt-2 text-rose">— O & S</p>
+              <p className="text-sm tracking-wider uppercase mt-2 text-rose">— V & S</p>
             </motion.div>
           </motion.div>
 
@@ -210,7 +210,7 @@ const RSVPForm = () => {
                         <RadioGroup
                           onValueChange={field.onChange}
                           defaultValue={field.value}
-                          className="flex gap-6 pt-2"
+                          className="flex flex-wrap gap-6 pt-2"
                         >
                           <div className="flex items-center space-x-3">
                             <RadioGroupItem

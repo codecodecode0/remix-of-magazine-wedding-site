@@ -1,0 +1,3 @@
+# Project rules
+- Keep wedding dates, venue, timeline milestones, and schedule in a shared wedding data module so sections stay consistent.
+- Interpret event times in Asia/Kolkata; use an explicit UTC offset for countdown targets so guests see the same countdown worldwide.

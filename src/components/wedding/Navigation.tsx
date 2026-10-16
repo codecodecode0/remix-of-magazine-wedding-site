@@ -40,7 +40,7 @@ const Navigation = () => {
               isScrolled ? "text-foreground" : "text-white"
             }`}
           >
-            O & S
+            V & S
           </a>
 
           {/* Desktop Navigation */}
@@ -83,7 +83,7 @@ const Navigation = () => {
           className="fixed inset-0 z-50 bg-background"
         >
           <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-            <span className="font-serif text-xl tracking-wide">O & S</span>
+            <span className="font-serif text-xl tracking-wide">V & S</span>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="p-2 hover:opacity-70 transition-opacity"
