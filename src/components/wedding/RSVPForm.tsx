@@ -110,7 +110,7 @@ const RSVPForm = () => {
           </h2>
           <div className="divider-editorial mt-8" />
           <p className="text-muted-foreground mt-8 max-w-md mx-auto">
-            Please respond by August 1st, 2026
+            January 28–29, 2027 · The Foresta Resort
           </p>
         </motion.div>
 
@@ -142,7 +142,7 @@ const RSVPForm = () => {
               <p className="font-serif text-lg italic text-muted-foreground">
                 "Can't wait to celebrate with you!"
               </p>
-              <p className="text-sm tracking-wider uppercase mt-2 text-rose">— O & S</p>
+              <p className="text-sm tracking-wider uppercase mt-2 text-rose">— V & S</p>
             </motion.div>
           </motion.div>
 

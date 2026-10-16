@@ -1,44 +1,15 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { storyMilestones } from "@/lib/wedding";
 
-const timelineEvents = [
-  {
-    year: "2019",
-    title: "First Glance",
-    description:
-      "A chance meeting at a friend's gallery opening. Across the crowded room, their eyes met over champagne and whispered conversations about art.",
-    image: "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=600&q=80",
-  },
-  {
-    year: "2020",
-    title: "The First Date",
-    description:
-      "A quiet dinner at a candlelit bistro in the city. Hours passed like minutes as they discovered shared dreams and endless laughter.",
-    image: "https://images.unsplash.com/photo-1559620192-032c4bc4674e?w=600&q=80",
-  },
-  {
-    year: "2022",
-    title: "Adventures Together",
-    description:
-      "From the cobblestone streets of Paris to the sunlit shores of Amalfi, every journey became more beautiful with each other.",
-    image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80",
-  },
-  {
-    year: "2024",
-    title: "The Proposal",
-    description:
-      "Under a canopy of stars at their favorite vineyard, he asked the question they both knew the answer to. She said yes.",
-    image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80",
-  },
-  {
-    year: "2026",
-    title: "Forever Begins",
-    description:
-      "This September, surrounded by those they love most, two become one. This is just the beginning of their greatest adventure.",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80",
-  },
+const storyImages = [
+  "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=600&q=80",
+  "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80",
+  "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80",
+  "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80",
 ];
+const timelineEvents = storyMilestones.map((event, index) => ({ ...event, image: storyImages[index] }));
 
 const TimelineItem = ({
   event,
@@ -99,14 +70,7 @@ const TimelineItem = ({
         >
           {event.title}
         </motion.h3>
-        <motion.p 
-          className="text-muted-foreground leading-relaxed"
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
-        >
-          {event.description}
-        </motion.p>
+
       </div>
     </motion.div>
   );

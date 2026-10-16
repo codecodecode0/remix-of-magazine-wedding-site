@@ -2,37 +2,16 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { Heart } from "lucide-react";
+import { wedding, getTimeLeft } from "@/lib/wedding";
 
 const Countdown = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   
-  const weddingDate = new Date("2026-09-14T16:00:00");
-  
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(new Date()));
 
   useEffect(() => {
-    const calculateTimeLeft = () => {
-      const now = new Date();
-      const difference = weddingDate.getTime() - now.getTime();
-
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
-        });
-      }
-    };
-
-    calculateTimeLeft();
-    const timer = setInterval(calculateTimeLeft, 1000);
+    const timer = setInterval(() => setTimeLeft(getTimeLeft(new Date())), 1000);
     return () => clearInterval(timer);
   }, []);
 
@@ -66,7 +45,7 @@ const Countdown = () => {
             Counting Down To
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-4">
-            The Big Day
+            Saptapadi
           </h2>
           <motion.div
             animate={{ scale: [1, 1.2, 1] }}
@@ -115,7 +94,7 @@ const Countdown = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-serif text-xl md:text-2xl italic text-white/80 mt-12"
         >
-          September 14, 2026 • Napa Valley
+          {wedding.dates} • {wedding.location}
         </motion.p>
       </div>
     </section>

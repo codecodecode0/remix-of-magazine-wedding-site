@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import { wedding } from "@/lib/wedding";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[92svh] py-28 flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <motion.div 
         className="absolute inset-0"
@@ -12,41 +13,13 @@ const Hero = () => {
       >
         <img
           src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80"
-          alt="Romantic couple"
+          alt="Wedding celebration"
           className="w-full h-full object-cover object-center"
         />
         {/* Elegant overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
       </motion.div>
       
-      {/* Decorative elements with subtle animation */}
-      <motion.div 
-        className="absolute top-20 left-10 w-32 h-32 rounded-full bg-blush/20 blur-3xl"
-        animate={{ 
-          x: [0, 15, 0],
-          y: [0, -10, 0],
-          scale: [1, 1.1, 1]
-        }}
-        transition={{ 
-          duration: 8, 
-          repeat: Infinity, 
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div 
-        className="absolute bottom-32 right-16 w-48 h-48 rounded-full bg-blush/20 blur-3xl"
-        animate={{ 
-          x: [0, -20, 0],
-          y: [0, 15, 0],
-          scale: [1, 1.15, 1]
-        }}
-        transition={{ 
-          duration: 10, 
-          repeat: Infinity, 
-          ease: "easeInOut"
-        }}
-      />
-
       <div className="relative z-10 container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -69,13 +42,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="heading-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-serif text-white"
+            className="heading-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-serif text-white"
           >
-            <span className="block">Olivia</span>
+            <span className="block">Vedangi</span>
             <span className="block text-3xl sm:text-4xl md:text-5xl font-normal italic text-white/70 my-4">
               &
             </span>
-            <span className="block">Sebastian</span>
+            <span className="block">Siddhant</span>
           </motion.h1>
 
           {/* Divider with subtle shimmer */}
@@ -105,10 +78,10 @@ const Hero = () => {
             className="space-y-2"
           >
             <p className="text-lg tracking-[0.2em] uppercase font-sans text-white/70">
-              September Fourteenth
+              January 28 & 29
             </p>
             <p className="font-serif text-2xl sm:text-3xl italic text-white">
-              Two Thousand Twenty Six
+              2027
             </p>
           </motion.div>
 
@@ -119,7 +92,7 @@ const Hero = () => {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="text-sm tracking-[0.15em] uppercase text-white/60 mt-8"
           >
-            The Whitmore Estate • Napa Valley, California
+            {wedding.venue} • {wedding.location}
           </motion.p>
         </motion.div>
 
