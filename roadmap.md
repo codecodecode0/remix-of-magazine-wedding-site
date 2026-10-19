@@ -1,4 +1,5 @@
 # Wedding personalization
+- [ ] Make Sangeet evoke modern dancing and Baarat evoke a procession, without people; show three schedule events per desktop row and verify.
 - [x] Update names, dates, venue, timeline, and two-day schedule.
 - [x] Verify wedding details and the visible page.
 - [ ] Replace template pictures with personal photos — waiting for the couple to upload photos.

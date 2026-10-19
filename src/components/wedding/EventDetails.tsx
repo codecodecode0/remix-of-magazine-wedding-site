@@ -25,7 +25,7 @@ const EventDetails = () => (
               <h3 className="font-serif text-xl md:text-2xl"><time dateTime={day.date}>{day.label}</time></h3>
               <div className="h-px bg-border flex-1" />
             </div>
-            <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-12 items-stretch">
+            <ul className="grid md:grid-cols-3 gap-x-6 lg:gap-x-8 gap-y-12 items-stretch">
               {day.events.map((event) => (
                 <li key={event.title} className="min-w-0 flex flex-col">
                   <div className="relative">
