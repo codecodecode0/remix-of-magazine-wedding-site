@@ -1,8 +1,8 @@
 import engagementImage from "@/assets/event-engagement.jpg";
 import haldiImage from "@/assets/event-haldi.jpg";
-import sangeetImage from "@/assets/sangeet-details.jpg";
+import sangeetImage from "@/assets/sangeet-modern.jpg";
 import saptapadiImage from "@/assets/event-saptapadi.jpg";
-import baaratImage from "@/assets/event-baarat.jpg";
+import baaratImage from "@/assets/baarat-celebration-details.jpg";
 import receptionImage from "@/assets/event-reception.jpg";
 
 export const wedding = {
@@ -38,7 +38,7 @@ export const celebrationDays = [
         quote: "सुरांची मैफल, नात्यांचा मेळ; आज रंगू दे आनंदाचा खेळ!",
         description: "An evening that brings both families together through music and dance. Celebrate with us as favourite songs, shared laughter and joyful performances fill the night with memories to treasure.",
         dressCode: "Jewel tones & festive sparkle", attire: "Lehengas, festive sarees, bandhgalas or embellished kurtas; wear shoes made for dancing.",
-        image: sangeetImage, imageAlt: "Golden ghungroo dancing bells and embroidered juttis on emerald velvet with flowers and warm sangeet lights",
+        image: sangeetImage, imageAlt: "Disco ball and microphone beside a modern Sangeet dance floor with geometric stage lights and festive flowers, without people",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const celebrationDays = [
         quote: "ढोलाच्या तालावर, आनंदाच्या गजरात; नाचत गात निघाली वरात!",
         description: "Let the celebration spill into the evening with the spirit of a lively varaat. Join the procession, cheer with our families and dance your heart out as we welcome this next chapter with joy.",
         dressCode: "Colourful festive wear", attire: "Bright sarees, festive kurtas or Indo-western outfits; comfortable footwear for the procession, with an optional colourful pheta.",
-        image: baaratImage, imageAlt: "Traditional dhol drums and colourful Maharashtrian pheta turbans surrounded by procession decorations",
+        image: baaratImage, imageAlt: "Flower-decorated wedding car, dhol and saffron pheta on a petal-strewn Baarat procession path, without people",
       },
       {
         title: "Reception", marathiTitle: "स्वागत समारंभ", time: "7:00 PM",
